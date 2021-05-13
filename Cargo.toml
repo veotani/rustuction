@@ -1,0 +1,17 @@
+[package]
+name = "rustuction"
+version = "0.1.0"
+authors = ["Anton Orlov <ion6431@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+config = { path = "./crates/config" }
+log = "0.4"
+simple_logger = "1.11.0"
+
+[workspace]
+members = [
+    "crates/config"
+]
